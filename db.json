@@ -1,0 +1,146 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "username": "james_kamau",
+        "firstName": "James",
+        "lastName": "Kamau",
+        "email": "james.kamau@gmail.com",
+        "phone": "+254722123456",
+        "type": "donor",
+        "location": "Westlands, Nairobi",
+        "createdAt": "2024-01-01T00:00:00.000Z"
+      },
+      {
+        "id": 2,
+        "username": "faith_wanjiku",
+        "firstName": "Faith",
+        "lastName": "Wanjiku",
+        "email": "faith.wanjiku@gmail.com",
+        "phone": "+254733987654",
+        "type": "recipient",
+        "location": "Zimmerman, Nairobi",
+        "createdAt": "2024-01-02T00:00:00.000Z"
+      },
+      {
+        "id": 3,
+        "username": "peter_omondi",
+        "firstName": "Peter",
+        "lastName": "Omondi",
+        "email": "peter.omondi@yahoo.com",
+        "phone": "+254711234567",
+        "type": "donor",
+        "location": "Kisumu CBD",
+        "createdAt": "2024-01-03T00:00:00.000Z"
+      }
+    ],
+    "donations": [
+      {
+        "id": 1,
+        "donorId": 1,
+        "title": "Secondary School Fees Support",
+        "description": "Supporting a bright student from Mathare with their Form One school fees at Alliance High School",
+        "amount": 65000,
+        "status": "available",
+        "category": "education",
+        "location": "Mathare, Nairobi",
+        "paymentMethod": ["M-PESA", "Bank Transfer"],
+        "createdAt": "2024-01-01T00:00:00.000Z"
+      },
+      {
+        "id": 2,
+        "donorId": 3,
+        "title": "Medical Fund for Dialysis",
+        "description": "Supporting monthly dialysis sessions at Kenyatta National Hospital",
+        "amount": 45000,
+        "status": "available",
+        "category": "medical",
+        "location": "Umoja, Nairobi",
+        "paymentMethod": ["M-PESA"],
+        "createdAt": "2024-01-03T00:00:00.000Z"
+      },
+      {
+        "id": 3,
+        "donorId": 1,
+        "title": "Small Business Support",
+        "description": "Helping a young entrepreneur start a small mama mboga business in Kawangware",
+        "amount": 25000,
+        "status": "completed",
+        "category": "business",
+        "location": "Kawangware, Nairobi",
+        "paymentMethod": ["M-PESA"],
+        "createdAt": "2024-01-04T00:00:00.000Z"
+      }
+    ],
+    "requests": [
+      {
+        "id": 1,
+        "userId": 2,
+        "donationId": 1,
+        "status": "pending",
+        "message": "Requesting support for my daughter's Form One admission to Alliance Girls. Have raised 15,000 KES so far.",
+        "supportingDocs": ["admission_letter.pdf", "fee_structure.pdf"],
+        "createdAt": "2024-01-02T00:00:00.000Z"
+      },
+      {
+        "id": 2,
+        "userId": 4,
+        "donationId": 2,
+        "status": "approved",
+        "message": "Need assistance with ongoing dialysis treatment at KNH. NHIF covers part but need help with the balance.",
+        "supportingDocs": ["medical_report.pdf", "hospital_bill.pdf"],
+        "createdAt": "2024-01-03T00:00:00.000Z"
+      }
+    ],
+    "transactions": [
+      {
+        "id": 1,
+        "donationId": 3,
+        "donorId": 1,
+        "recipientId": 5,
+        "amount": 25000,
+        "status": "completed",
+        "paymentMethod": "M-PESA",
+        "mpesaReference": "QWE7890RT",
+        "createdAt": "2024-01-05T00:00:00.000Z"
+      },
+      {
+        "id": 2,
+        "donationId": 2,
+        "donorId": 3,
+        "recipientId": 4,
+        "amount": 45000,
+        "status": "pending",
+        "paymentMethod": "M-PESA",
+        "mpesaReference": "PLD4567MN",
+        "createdAt": "2024-01-06T00:00:00.000Z"
+      }
+    ],
+    "categories": [
+      {
+        "id": 1,
+        "name": "education",
+        "description": "School fees, books, uniforms, and other educational needs"
+      },
+      {
+        "id": 2,
+        "name": "medical",
+        "description": "Hospital bills, medication, and medical procedures"
+      },
+      {
+        "id": 3,
+        "name": "business",
+        "description": "Small business startup and support"
+      },
+      {
+        "id": 4,
+        "name": "emergency",
+        "description": "Natural disasters, accidents, and urgent needs"
+      },
+      {
+        "id": 5,
+        "name": "community",
+        "description": "Community projects and infrastructure"
+      }
+    ]
+  }
